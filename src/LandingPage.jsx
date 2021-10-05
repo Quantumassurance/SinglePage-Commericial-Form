@@ -251,7 +251,7 @@ class LandingPage extends Component {
           theme={'colored'}
         />
 
-<section>
+<section className="int">
   <nav className="relative px-6 py-6 flex justify-between items-center py-6 bg-white">
     <a className="text-3xl font-bold leading-none" href="#" data-config-id="brand">
       <img className="h-12" src={Logo} alt="" width="auto" />
@@ -259,12 +259,11 @@ class LandingPage extends Component {
     <div className="lg:hidden">
     <button className="hidden lg:block py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded text-white font-bold text-sm transition duration-200" data-config-id="primary-action-nav">(855) 336-1823</button>
     </div>
-   
+
 
     <button className=" lg:block py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded text-white font-bold text-sm transition duration-200" data-config-id="primary-action-nav">(855) 336-1823</button>
   </nav>
-  <div className="relative py-20 int overflow-hidden">
-    <img className=" lg:block absolute inset-0 w-full" src={Back} alt="" />
+  <div className="relative py-20  overflow-hidden">
     <div className="relative container mx-auto px-4">
       <div className="flex flex-wrap items-center -mx-4">
         <div className="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
