@@ -9,3 +9,7 @@ a {
 input:focus {
     border:#484abf 1px solid;
 }
+
+.int {
+    min-height: 90vh;
+}

@@ -263,7 +263,7 @@ class LandingPage extends Component {
 
     <button className=" lg:block py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded text-white font-bold text-sm transition duration-200" data-config-id="primary-action-nav">(855) 336-1823</button>
   </nav>
-  <div className="relative py-20  overflow-hidden">
+  <div className="relative py-20 int overflow-hidden">
     <img className=" lg:block absolute inset-0 w-full" src={Back} alt="" />
     <div className="relative container mx-auto px-4">
       <div className="flex flex-wrap items-center -mx-4">
