@@ -1,0 +1,11 @@
+a {
+    color: #484abf
+}
+
+.p {
+    font-size: x-small;
+}
+
+input:focus {
+    border:#484abf 1px solid;
+}
