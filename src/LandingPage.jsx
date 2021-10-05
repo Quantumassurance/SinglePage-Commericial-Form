@@ -35,24 +35,22 @@ class LandingPage extends Component {
         this.setZipCode = this.setZipCode.bind(this);
     }
 
-    submitForm = () => {   
-                
-        
-
-        // this.setFName();
-        // this.setLName();
-        // this.setEmail();
-        // this.setPhone();
-        // this.setBusinessName();
-        // this.setZipCode();
-
-
+    submitForm = (values) => {   
+                       
         const firstName = document.getElementById('firstName').value;
         const lastName = document.getElementById('lastName').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
         const businessName = document.getElementById('businessName').value;
         const zipCode = document.getElementById('zipCode').value;
+
+
+        this.setFName();
+        this.setLName();
+        this.setEmail();
+        this.setPhone();
+        this.setBusinessName();
+        this.setZipCode();
 
         if(firstName.length < 1){
             toast.error('no')
@@ -83,6 +81,8 @@ class LandingPage extends Component {
         loading: true 
       }, this.postFBA(this.props.postData));
 
+      this.props.history.push('/thank-you')
+
  }
 
  postAll() {
@@ -105,9 +105,6 @@ class LandingPage extends Component {
             this.props.setFname(firstName)
         }
 
-
-        return;
-
     }
 
     setLName = (values) => {
@@ -128,8 +125,6 @@ class LandingPage extends Component {
             this.props.setLName(lastName)
         }
 
-        return;
-
 
     }
 
@@ -140,7 +135,6 @@ class LandingPage extends Component {
         if(email.length < 1){
             toast.error("Please Enter Your A Valid Email")
             values.preventDefault();
-            return;
 
 
         }
@@ -149,7 +143,6 @@ class LandingPage extends Component {
             this.props.setEmail(email)
         }
 
-        return;
 
 
     }
@@ -161,7 +154,6 @@ class LandingPage extends Component {
         if(phone.length < 1){
             toast.error("Please Enter A Valid Phone Number")
             values.preventDefault();
-            return;
 
 
         }
@@ -170,7 +162,6 @@ class LandingPage extends Component {
             this.props.setPhone(phone)
         }
 
-        return;
 
     }
 
@@ -181,7 +172,6 @@ class LandingPage extends Component {
         if(businessName.length < 1){
             toast.error("Please Enter Your Business Name")
             values.preventDefault();
-            return;
 
 
         }
@@ -190,7 +180,6 @@ class LandingPage extends Component {
             this.props.setBusinessName(businessName)
         }
 
-        return;
 
 
     }
@@ -202,7 +191,6 @@ class LandingPage extends Component {
         if(zipCode.length < 5){
             toast.error("Please Enter Your A Valid Zip Code")
             values.preventDefault();
-            return;
 
 
         }
@@ -210,8 +198,6 @@ class LandingPage extends Component {
         else{
             this.props.setZipCode(zipCode)
         }
-
-        return;
 
     }
 
