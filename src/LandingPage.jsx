@@ -206,7 +206,7 @@ class LandingPage extends Component {
 
     postFBA = (postData) => {
         console.log(postData);
-        Axios.post("https://quotehound.leadspediatrack.com/post.do", null, {
+        Axios.post("https://quantumassurance.leadspediatrack.com/post.do", null, {
           params: postData,
         })
 
@@ -247,7 +247,8 @@ class LandingPage extends Component {
           rtl={false}
           pauseOnFocusLoss
           draggable
-          pauseOnHover
+              pauseOnHover
+              limit={1}
           theme={'colored'}
         />
 
@@ -257,11 +258,11 @@ class LandingPage extends Component {
       <img className="h-12" src={Logo} alt="" width="auto" />
     </a>
     <div className="lg:hidden">
-    <button className="hidden lg:block py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded text-white font-bold text-sm transition duration-200" data-config-id="primary-action-nav">(855) 336-1823</button>
+    <button className="hidden lg:block py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded text-white font-bold text-sm transition duration-200" data-config-id="primary-action-nav">(888) 306-3429</button>
     </div>
 
 
-    <button className=" lg:block py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded text-white font-bold text-sm transition duration-200" data-config-id="primary-action-nav">(855) 336-1823</button>
+    <button className=" lg:block py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded text-white font-bold text-sm transition duration-200" data-config-id="primary-action-nav">(888) 306-3429</button>
   </nav>
   <div className="relative py-20  overflow-hidden">
     <div className="relative container mx-auto px-4">
